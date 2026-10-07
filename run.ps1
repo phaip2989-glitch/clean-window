@@ -18,7 +18,7 @@ catch {
 
 # รันไฟล์จริงผ่าน cmd.exe ทำให้ goto/label/pause ทำงานได้ปกติทุกปุ่ม
 # -Verb RunAs = ขอสิทธิ์ Admin อัตโนมัติ (จำเป็นสำหรับ wevtutil / net stop เป็นต้น)
-Start-Process -FilePath "cmd.exe" -ArgumentList "/c `"$tmpFile`"" -Verb RunAs -Wait
+Start-Process -FilePath "cmd.exe" -ArgumentList "/k `"$tmpFile`"" -Verb RunAs -Wait
 
 # ลบไฟล์ชั่วคราวทิ้งหลังใช้งานเสร็จ
 Remove-Item $tmpFile -Force -ErrorAction SilentlyContinue
