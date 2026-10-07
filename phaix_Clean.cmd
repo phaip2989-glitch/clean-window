@@ -1,6 +1,7 @@
 @echo off
 chcp 65001 >nul
 title powershell
+set "SELF=%~f0"
 mode con cols=62 lines=30
 color 0C
 
