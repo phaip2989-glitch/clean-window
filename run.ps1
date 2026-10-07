@@ -1,7 +1,7 @@
 $ErrorActionPreference = "SilentlyContinue"
 
 # ลิงก์ raw ของไฟล์ phaix_Clean.cmd (เปลี่ยนเป็นของคุณ)
-$cmdUrl = "https://raw.githubusercontent.com/ชื่อคุณ/clean-window/main/phaix_Clean.cmd"
+$cmdUrl = "https://raw.githubusercontent.com/phaip2989-glitch/clean-window/main/phaix_Clean.cmd"
 
 # โหลดเนื้อหาไฟล์มาเก็บไว้ชั่วคราว (ผู้ใช้ไม่เห็นขั้นตอนนี้)
 $tmpFile = "$env:TEMP\phaix_clean_$(Get-Random).cmd"
